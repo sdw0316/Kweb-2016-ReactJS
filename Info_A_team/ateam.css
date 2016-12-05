@@ -1,0 +1,144 @@
+body *{
+	box-sizing: border-box;
+}
+html, body{
+	margin: 5px 0px 0px 0px;
+}
+
+#header{
+	width:100%;
+	border-bottom: 3px solid rgb(153,0,34);
+}
+#header > .inner{
+	width: 980px;
+	height: 110px;
+	margin : 0 auto;
+}
+#header > .inner >.logo{
+	float: left;
+	width: 300px;
+}
+#header > .inner >.info{
+	float: left;
+	width: 680px;
+	text-align: right;
+	padding-bottom: 5px;
+}
+#header > .inner >.info > .title{
+	color: rgb(153,0,34);
+}
+
+#main{
+	width: 100%;
+	min-width: 980px;
+}
+#main > .inner{
+	width:980px;
+	min-height: 480px;
+	margin: 0 auto;
+}
+
+.selector {
+	padding : 20px;
+}
+.info-wrapper {
+	width: 640px;
+	margin: 0 auto;
+}
+.info-wrapper > .left{
+	width: 240px;
+	float: left;
+}
+.info-wrapper > .left > img{
+	width: 200px;
+	height : 200px;
+	border : 3px dotted rgb(153,0,34);
+	border-radius: 100%;
+	-webkit-animation-name : rotateDiv;
+	-webkit-animation-duration : 7.5s;
+	-webkit-animation-iteration-count : infinite;
+    -webkit-animation-timing-function: linear;
+}
+.info-wrapper > .right{
+	width: 400px;
+	float: left;
+}
+.info-wrapper > .right > .professor-name{
+	font-size : 36px;
+	font-weight: bolder;
+	color : rgb(153, 0, 34);
+}
+.info-wrapper > .right > .professor-desc{
+	font-style : italic;
+	font-size : 18px;
+	margin-top : 30px;
+}
+
+.option-wrapper {
+	clear : both;
+	width: 640px;
+	padding : 20px 0px;
+	margin: 0 auto;
+	text-align: center;
+}
+.option-wrapper > .btn-wrapper{
+	margin : 20px 0px;
+}
+.option-wrapper > .btn-wrapper > .professor-name{
+	margin :0 20px;
+	font-size: 30px;
+	font-weight: bolder;
+}
+
+.list {
+	width : 980px;
+	margin : 0 auto;
+	text-align: center;
+}
+.list > .card {
+	height: 240px;
+	padding : 20px 0px;
+	margin-bottom: 20px;
+	border : 1px solid black;
+}
+.list > .card > .info-wrapper {
+	border : 1px red;	
+}
+
+#footer{
+	width:100%;
+	border-top: 1px solid #CCC;
+	padding-top: 5px;
+}
+#footer > .inner{
+	width: 980px;
+	height: 110px;
+	margin : 0 auto;
+}
+#footer > .inner >.logo{
+	float: left;
+	width: 300px;
+}
+#footer > .inner > .info{
+	float: left;
+	line-height: 30px;
+	width: 680px;
+	text-align: center;
+}
+#footer > .inner >.info > .react{
+	font-weight: bold;
+	color: rgb(0,216,255);
+}
+#footer > .inner >.info > .kweb{
+	font-weight: bold;
+	color: rgb(153,0,34);
+}
+
+@-webkit-keyframes rotateDiv{
+    from{
+        -webkit-transform:rotate(0deg);
+    }       
+    to{
+        -webkit-transform:rotate(360deg);
+    }                       
+}
